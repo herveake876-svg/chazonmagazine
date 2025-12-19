@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkslategrey;
+}
+
+.text-orange {
+  color: #d33d0f; /* orange foncé */
+}
+
+  .bg-orange {
+    background-color: rgb(233, 111, 30) !important;
+  }
+
+ 
+  .btn-outline-orange {
+    color: rgb(224, 118, 19);
+    border-color: rgb(235, 118, 22);
+  }
+  .btn-outline-orange:hover {
+    background-color: rgb(212, 123, 20);
+    color: white;
+  }
+
+
+
+
+

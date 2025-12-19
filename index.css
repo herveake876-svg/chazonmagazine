@@ -1,0 +1,315 @@
+.cards-container {
+    display: flex;            /* Alignement horizontal */
+    gap: 150px;                /* Espace entre les cards */
+    margin: 40px 0;
+    justify-content: center;  /* Centrer les cards */
+}
+
+.card {
+    background: #b9cbee;      /* Couleur foncée comme l'exemple */
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;         /* Coupe les bords */
+    color:rgb(14, 13, 13);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .content {
+    padding: 15px;
+}
+
+.card .quote {
+    font-style: italic;
+    border-left: 3px solid orange;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+.logo {
+    width: 100px;   /* taille du logo */
+    height: auto;   /* garde les proportions */
+     position:absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%); /* centre verticalement dans la navbar */
+    z-index: 20; /* s'assurer qu'il soit au-dessus des autres éléments */
+    display: block;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkslategrey;
+}
+.nav-links{
+    background-color: rgb(15, 20, 51);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative; /* pour que l'élément search-position absolute soit relatif à ce conteneur */
+}
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;                    /Espace entre les elements /
+}
+
+.nav-links ul li{
+    color: rgb(17, 17, 17);
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px 15px;  
+}
+.nav-links ul li:hover{
+    background:rgb(241, 237, 237) ;
+    color: rgb(7, 7, 7);
+}
+
+
+ 
+.menu-hamburger{
+    display: none;
+     width: 35px;
+    position:absolute;
+    top: 50px;
+    right: 30px;
+    width: 35px;
+}
+
+.navbar{
+    position: relative; /* ancre les éléments absolus (logo, menu) à l'intérieur de la barre */
+}
+
+  .nav-links ul li{
+    color: rgb(8, 8, 8);
+     font-size: 18px;
+    cursor: pointer;
+    padding: 8px 15px;   
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    background: rgb(3, 15, 54);
+    border-radius: 30px;
+    padding: 5px 10px;
+    /* sortir du flux pour ne pas perturber le centrage des liens */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-btn img {
+    width: 20px;   /* taille de l’icône */
+    height: 20px;
+}
+
+
+.footer {
+    background: linear-gradient(to right, #0b1c3f, #132b5c);
+    color: white;
+    padding: 50px 20px 20px;
+}
+
+.footer-container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-logo {
+    width: 140px;
+    margin-bottom: 15px;
+}
+
+.footer-box h3 {
+    margin-bottom: 15px;
+    color: orange;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-box ul li a:hover {
+    color: orange;
+}
+
+.footer-line {
+    border: none;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    margin: 30px 0 15px;
+}
+
+copyright {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.temoignages {
+    background: linear-gradient(to bottom, #050b24, #07153d);
+    padding: 60px 80px;
+    color: rgb(233, 99, 22);
+}
+
+.temoignages-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.temoignages-header h2 {
+    margin: 10px 0 5px;
+}
+
+.temoignages-header p {
+    color: #b5c0ff;
+    font-size: 14px;
+}
+
+.line {
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background: rgb(199, 67, 34);
+    margin-bottom: 10px;
+}
+
+.btn-stories {
+    padding: 8px 18px;
+    border: 1px solid rgb(228, 106, 25);
+    border-radius: 20px;
+    color: rgb(219, 109, 19);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-stories:hover {
+    background: rgb(231, 110, 39);
+    color: white;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 900px){
+
+   header{
+    height: 100vh;
+     width: 100vw; 
+    background-image:url('img/background.png');
+    background-size: cover; 
+    height: 150px;    /reduit le background/
+}
+   
+
+
+.logo {
+    display: block;
+    width: 100px;   /* taille du logo */
+    height:auto;   /* garde les proportions */
+     position:absolute;
+    left: 50px; 
+
+ 
+}
+
+
+.navbar .menu-hamburger{
+    display:block;
+    
+}
+.nav-links{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(240, 223, 223, 0.226);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height:100vh ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition:all 0,5s ease ;
+} 
+
+/* En mobile, remettre le search-container dans le flux normal */
+.nav-links .search-container{
+    position: static;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin: 20px 0 0 0;
+    width: 80%;
+}
+
+ .mobile-menu{
+        margin-left: 0;
+    }
+    
+
+.nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar .nav-links ul li{
+margin: 25px 0;
+font-size: 1.2em;
+}
+
+
+
+
+

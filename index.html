@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Humanite </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <!-- <link rel="stylesheet" href="./Css/bootstrap.css"> -->
+    <link rel="stylesheet" href="index.css">    
+   
+   
+</head>
+<body>
+
+
+
+
+    <nav class="navbar">
+        <img src="img/logo.png" alt="Logo Humanité+" class="logo">
+        <div class="nav-links">
+           
+   
+          <ul>
+         <li>Tous</li>      
+        <li><a href="./liens site/education .html">Education</a></li> 
+        <li><a href="./liens site/santé.html"> santé</a></li>
+        <li><a href="./liens site/scolarité.html">Scolarité</a></li>
+        <li><a href="./liens site/refugies .html">Refugiés</a></li>
+        
+    </ul>
+ 
+    <div class="search-container">
+    <input type="text" placeholder="Rechercher..." class="search-input">
+    <button class="search-btn">
+        <img src="img/tof search.png " alt="Recherche">
+    </button>
+</div>
+
+
+    </div>
+
+  
+    <img src="img/menu butun.png" 
+alt="menu hamburger "class="menu-hamburger">
+</nav>
+<header></header>
+
+
+
+  <!-- <hr class="line"> -->
+
+
+  <section class="temoignages">
+
+    <!-- En-tête -->
+    <div class="temoignages-header">
+        <div>
+            <span class="line"></span>
+            <h2>Témoignages</h2>
+            <p>Des histoires de vie qui inspirent le changement</p>
+        </div>
+
+        <a href="#" class="btn-stories">Toutes les stories</a>
+    </div>
+
+<div class="cards-container">
+
+    <div class="card">
+        <img src="img/images.jpeg" alt="">
+        <div class="content">
+            <p class="quote">“L’éducation m’a redonné espoir…”</p>
+            <h3>Amira Hassan</h3>
+            <span>Réfugiée syrienne, France</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/images 2.jpeg" alt="">
+        <div class="content">
+            <p class="quote">“Grâce aux bourses scolaires...”</p>
+            <h3>Kofi Mensah</h3>
+            <span>Étudiant, Ghana</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/istockphoto-1212532460-612x612.jpg" alt="">
+        <div class="content">
+            <p class="quote">“Le micro-crédit m’a permis...”</p>
+            <h3>Maria Santos</h3>
+            <span>Entrepreneuse, Brésil</span>
+        </div>
+    </div>
+
+</div>
+
+
+    
+
+
+<div class="cards-container">
+
+    <div class="card">
+        <img src="img/images.jpeg" alt="">
+        <div class="content">
+            <p class="quote">“L’éducation m’a redonné espoir…”</p>
+            <h3>Amira Hassan</h3>
+            <span>Réfugiée syrienne, France</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/images 2.jpeg" alt="">
+        <div class="content">
+            <p class="quote">“Grâce aux bourses scolaires...”</p>
+            <h3>Kofi Mensah</h3>
+            <span>Étudiant, Ghana</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/istockphoto-1212532460-612x612.jpg" alt="">
+        <div class="content">
+            <p class="quote">“Le micro-crédit m’a permis...”</p>
+            <h3>Maria Santos</h3>
+            <span>Entrepreneuse, Brésil</span>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Logo & description -->
+        <div class="footer-box">
+            <img src="img/logo.png" alt="Logo" class="footer-logo">
+            <p>
+                Ensemble, construisons un avenir solidaire à travers
+                l’éducation, la santé et l’entraide.
+            </p>
+        </div>
+
+        <!-- Liens rapides -->
+        <div class="footer-box">
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Éducation</a></li>
+                <li><a href="#">Santé</a></li>
+                <li><a href="#">Solidarité</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>📍 Lomé, Togo</p>
+            <p>📧 contact@humaniteplus.org</p>
+            <p>📞 +228 90 00 00 00</p>
+        </div>
+
+    </div>
+
+    <hr class="footer-line">
+
+    <p class="copyright">
+        © 2025 Humanité+ | Tous droits réservés
+    </p>
+</footer>
+
+
+
+
+
+
+<script src="./Js/bootstrap.bundle.min.js"></script>  
+</body>
+
+ <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
